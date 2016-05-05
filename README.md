@@ -1,4 +1,3 @@
 # A1E
-  Kevin Topper
-  Enrico Lund
-  Enrico oli veel kord siin.
+  Kevin, Enrico ja Gregory olid siin.
+  Grupp 1 easy win
