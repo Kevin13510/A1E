@@ -1,0 +1,8 @@
+﻿<Window x:Class="Kalkulaator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="nupp">
+        <Button x:Name="Kolmnurk" Content="Button" HorizontalAlignment="Left" Margin="45,44,0,0" VerticalAlignment="Top" Width="75" Click="Kolmnurk_Click"/>
+    </Grid>
+</Window>
