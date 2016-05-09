@@ -8,10 +8,10 @@
             <ColumnDefinition Width="251*"/>
             <ColumnDefinition Width="266*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="kolmnurk" Content="▲" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click" Height="40" Grid.Column="1"/>
-        <Button x:Name="ring" Content="●" HorizontalAlignment="Left" Margin="8,66,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1"/>
-        <Button x:Name="ristkylik" Content="▬" HorizontalAlignment="Left" Margin="8,120,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1"/>
-        <Button x:Name="ruut" Content="■" HorizontalAlignment="Left" Margin="8,179,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1"/>
+        <Button x:Name="kolmnurk" Content="▲" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="kolmnurk_Click"/>
+        <Button x:Name="ring" Content="●" HorizontalAlignment="Left" Margin="8,66,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="ring_Click"/>
+        <Button x:Name="ristkylik" Content="▬" HorizontalAlignment="Left" Margin="8,120,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="ristkylik_Click"/>
+        <Button x:Name="ruut" Content="■" HorizontalAlignment="Left" Margin="8,179,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="ruut_Click"/>
         <TextBox x:Name="kast1" HorizontalAlignment="Left" Height="23" Margin="118,34,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Grid.Column="2" Visibility="Hidden"/>
         <TextBlock x:Name="pikkus" Grid.Column="2" HorizontalAlignment="Left" Margin="73,34,0,0" TextWrapping="Wrap" Text="pikkus: " VerticalAlignment="Top" Height="16" Width="40" Visibility="Hidden"/>
         <TextBox x:Name="kast2" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="118,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
@@ -22,7 +22,7 @@
         <TextBlock x:Name="kylg3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="69,107,0,0" Text="3.külg: " Visibility="Hidden"/>
         <TextBlock x:Name="kylg1" TextWrapping="Wrap" Text="1.külg: " Grid.Column="2" Margin="67,34,148,269" Visibility="Hidden"/>
         <TextBlock x:Name="kylg2" TextWrapping="Wrap" Grid.Column="2" Margin="69,67,146,236" Text="2.külg: " Visibility="Hidden"/>
-        <Button x:Name="arvuta" Grid.ColumnSpan="3" Content="ARVUTA!" HorizontalAlignment="Left" Margin="179,188,0,0" VerticalAlignment="Top" Width="107" Height="31"/>
+        <Button x:Name="arvuta" Grid.ColumnSpan="3" Content="ARVUTA!" HorizontalAlignment="Left" Margin="179,188,0,0" VerticalAlignment="Top" Width="107" Height="31" Click="arvuta_Click"/>
         <TextBlock x:Name="pindala" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pindala: " VerticalAlignment="Top" Grid.Column="2" Margin="56,242,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="56,263,0,0" Width="88"><Run Text="Ümbermõõ"/><Run Text="t: "/></TextBlock>
 
