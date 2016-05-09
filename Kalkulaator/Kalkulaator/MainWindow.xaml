@@ -22,9 +22,9 @@
         <TextBlock x:Name="kylg3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="69,107,0,0" Text="3.külg: " Visibility="Hidden"/>
         <TextBlock x:Name="kylg1" TextWrapping="Wrap" Text="1.külg: " Grid.Column="2" Margin="67,34,148,269" Visibility="Hidden"/>
         <TextBlock x:Name="kylg2" TextWrapping="Wrap" Grid.Column="2" Margin="69,67,146,236" Text="2.külg: " Visibility="Hidden"/>
-        <Button x:Name="arvuta" Grid.ColumnSpan="3" Content="ARVUTA!" HorizontalAlignment="Left" Margin="179,188,0,0" VerticalAlignment="Top" Width="107" Height="31"/>
-        <TextBlock x:Name="pindala" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pindala: " VerticalAlignment="Top" Grid.Column="2" Margin="56,242,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="56,263,0,0" Width="88"><Run Text="Ümbermõõ"/><Run Text="t: "/></TextBlock>
+        <Button x:Name="arvuta" Grid.ColumnSpan="3" Content="ARVUTA!" HorizontalAlignment="Left" Margin="179,188,0,0" VerticalAlignment="Top" Width="107" Height="31" Visibility="Hidden"/>
+        <TextBlock x:Name="pindala" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pindala: " VerticalAlignment="Top" Grid.Column="2" Margin="56,242,0,0" Visibility="Hidden"/>
+        <TextBlock x:Name="ymbermoot" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="56,263,0,0" Width="88" Visibility="Hidden"><Run Text="Ümbermõõ"/><Run Text="t: "/></TextBlock>
 
     </Grid>
 </Window>
