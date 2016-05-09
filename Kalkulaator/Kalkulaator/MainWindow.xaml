@@ -1,7 +1,7 @@
 ﻿<Window x:Name="Kujundikalkulaator" x:Class="Kalkulaator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Kujundikalkulaator" Height="350" Width="525" Background="#FF19E0FF">
+        Title="Kujundikalkulaator" Height="350" Width="525" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
     <Grid x:Name="SUURKASTKUSASJADSEESON">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
@@ -12,19 +12,26 @@
         <Button x:Name="ring" Content="●" HorizontalAlignment="Left" Margin="8,66,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="ring_Click"/>
         <Button x:Name="ristkylik" Content="▬" HorizontalAlignment="Left" Margin="8,120,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="ristkylik_Click"/>
         <Button x:Name="ruut" Content="■" HorizontalAlignment="Left" Margin="8,179,0,0" VerticalAlignment="Top" Width="68" Height="40" Grid.Column="1" Click="ruut_Click"/>
-        <TextBox x:Name="kast1" HorizontalAlignment="Left" Height="23" Margin="118,34,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Grid.Column="2" Visibility="Hidden"/>
-        <TextBlock x:Name="pikkus" Grid.Column="2" HorizontalAlignment="Left" Margin="73,34,0,0" TextWrapping="Wrap" Text="pikkus: " VerticalAlignment="Top" Height="16" Width="40" Visibility="Hidden"/>
-        <TextBox x:Name="kast2" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="118,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
-        <TextBlock x:Name="laius" Grid.Column="2" HorizontalAlignment="Left" Margin="83,67,0,0" TextWrapping="Wrap" Text="laius: " VerticalAlignment="Top" Height="16" Width="30" Visibility="Hidden"/>
-        <TextBlock x:Name="SisestaAndmed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sisesta kujundi andmed." VerticalAlignment="Top" Margin="94,34,0,0" Width="225" Grid.Column="1" Height="36" Grid.ColumnSpan="2" FontSize="20" Visibility="Hidden"/>
-        <TextBox x:Name="kast3" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="118,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
-        <TextBlock x:Name="raadius" HorizontalAlignment="Left" TextWrapping="Wrap" Text="raadius: " Margin="69,107,0,196" Grid.Column="2" Visibility="Hidden"/>
-        <TextBlock x:Name="kylg3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="69,107,0,0" Text="3.külg: " Visibility="Hidden"/>
-        <TextBlock x:Name="kylg1" TextWrapping="Wrap" Text="1.külg: " Grid.Column="2" Margin="67,34,148,269" Visibility="Hidden"/>
-        <TextBlock x:Name="kylg2" TextWrapping="Wrap" Grid.Column="2" Margin="69,67,146,236" Text="2.külg: " Visibility="Hidden"/>
-        <Button x:Name="arvuta" Grid.ColumnSpan="3" Content="ARVUTA!" HorizontalAlignment="Left" Margin="179,188,0,0" VerticalAlignment="Top" Width="107" Height="31" Click="arvuta_Click"/>
-        <TextBlock x:Name="pindala" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pindala: " VerticalAlignment="Top" Grid.Column="2" Margin="56,242,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="56,263,0,0" Width="88"><Run Text="Ümbermõõ"/><Run Text="t: "/></TextBlock>
+        <TextBox x:Name="kylg1" HorizontalAlignment="Left" Height="23" Margin="136,46,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Grid.Column="2" Visibility="Visible"/>
+        <TextBox x:Name="kylg2" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="136,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+        <TextBlock x:Name="SisestaAndmed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sisesta kujundi andmed." VerticalAlignment="Top" Margin="126,10,0,0" Width="225" Grid.Column="1" Height="36" Grid.ColumnSpan="2" FontSize="20" Visibility="Visible"/>
+        <TextBox x:Name="kylg3" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="136,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+        <Button x:Name="arvuta" Grid.ColumnSpan="3" Content="ARVUTA!" HorizontalAlignment="Left" Margin="178,247,0,0" VerticalAlignment="Top" Width="107" Height="31" Click="arvuta_Click"/>
+        <TextBlock x:Name="label8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pindala: " VerticalAlignment="Top" Grid.Column="2" Margin="100,255,0,0" Visibility="Hidden"/>
+        <TextBlock x:Name="label9" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="75,271,0,0" Width="88" Visibility="Hidden"><Run Text="Ümbermõõ"/><Run Text="t: "/></TextBlock>
+        <TextBox x:Name="laius" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="179,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="pikkus" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="178,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="raadius" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="178,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="kõrgus" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="179,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Visible" Grid.ColumnSpan="2"/>
+        <Label Grid.ColumnSpan="2" Content="Laius:" HorizontalAlignment="Left" Margin="126,43,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Grid.ColumnSpan="2" Content="Pikkus:" HorizontalAlignment="Left" Margin="126,89,0,0" VerticalAlignment="Top"/>
+        <Label Grid.ColumnSpan="2" Content="Raadius:" HorizontalAlignment="Left" Margin="121,134,0,0" VerticalAlignment="Top"/>
+        <Label Grid.ColumnSpan="2" Content="Kõrgus:" HorizontalAlignment="Left" Margin="125,176,0,0" VerticalAlignment="Top"/>
+        <Label Content="1.külg(alus):" HorizontalAlignment="Left" Margin="63,46,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Content="2.külg:" HorizontalAlignment="Left" Margin="87,88,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Content="3.külg:" HorizontalAlignment="Left" Margin="87,134,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label x:Name="Pindala" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="149,250,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Ymbermoot" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="149,266,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
