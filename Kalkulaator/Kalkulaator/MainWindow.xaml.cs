@@ -364,7 +364,7 @@ namespace Kalkulaator
    }
 
 
-   if (kylg1.IsVisible == true && kõrgus.IsVisible == false)
+   if (kylg1.IsVisible == true && kõrgus.IsVisible == false && Külg2.IsVisible == false)
    {
     if (kylg1.Text == "")
     {
