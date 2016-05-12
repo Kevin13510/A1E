@@ -204,8 +204,6 @@ namespace Kalkulaator
    double b = 0;
    double k2 = 0;
    double k3 = 0;
-   double p = 0;
-
 
 
 
@@ -221,9 +219,6 @@ namespace Kalkulaator
     k1 = double.Parse(kylg1.Text);
     h = double.Parse(kõrgus.Text);
     k2 = double.Parse(Külg2.Text);
-    //r = int.Parse(raadius.Text);
-    //a = int.Parse(pikkus.Text);
-    //b = int.Parse(laius.Text);
    }
    catch (FormatException)
    {
@@ -313,13 +308,7 @@ namespace Kalkulaator
     }
     try
     {
-     //k1 = int.Parse(kylg1.Text);
-     //k2 = int.Parse(kylg2.Text);
-     //k3 = int.Parse(kylg3.Text);
-     //h = int.Parse(kõrgus.Text);
      r = double.Parse(raadius.Text);
-     //a = int.Parse(pikkus.Text);
-     //b = int.Parse(laius.Text);
     }
     catch (FormatException)
     {
@@ -343,11 +332,6 @@ namespace Kalkulaator
     }
     try
     {
-     //k1 = int.Parse(kylg1.Text);
-     //k2 = int.Parse(kylg2.Text);
-     //k3 = int.Parse(kylg3.Text);
-     //h = int.Parse(kõrgus.Text);
-     //r = int.Parse(raadius.Text);
      a = double.Parse(pikkus.Text);
      b = double.Parse(laius.Text);
     }
@@ -364,7 +348,7 @@ namespace Kalkulaator
    }
 
 
-   if (kylg1.IsVisible == true && kõrgus.IsVisible == false)
+   if (kylg1.IsVisible == true && kõrgus.IsVisible == false && Külg2.IsVisible == false)
    {
     if (kylg1.Text == "")
     {
@@ -374,12 +358,6 @@ namespace Kalkulaator
     try
     {
      k1 = double.Parse(kylg1.Text);
-     //k2 = int.Parse(kylg2.Text);
-     //k3 = int.Parse(kylg3.Text);
-     //h = int.Parse(kõrgus.Text);
-     //r = int.Parse(raadius.Text);
-     //a = int.Parse(pikkus.Text);
-     //b = int.Parse(laius.Text);
     }
     catch (FormatException)
     {
